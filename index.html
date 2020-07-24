@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Chuck Jokes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+        body{
+            background-color: rgba(0, 0, 0, 0.664);
+            font-family: 'Orbitron', sans-serif;
+            color: #e9942b !important;
+        }
+        img{
+            max-height: 220px; max-width: 200px;
+        }
+        .blockquote {
+            max-width: 500px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!--Code html--> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient">
+        <div class="container">
+                <a class="navbar-brand text-light" href="#">Chuck Norris Joke</a>
+                <button id="jokeBtn" class="btn btn-success shadow-lg px-4" type="button">
+                    Générer
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </button>
+        </div>
+    </nav>
+    <div class="col-sm-12">
+        <div class="d-flex justify-content-center my-5">  
+        <img src="img/chuck.png" alt="Photo de chuck Norris" class="btn">
+        </div>
+        
+        <div class="d-flex justify-content-center">
+                
+            <blockquote id="jokeTexte"  class="blockquote shadow-lg p-4 border border-primary rounded lh-lg"></blockquote>
+            
+        </div>
+    </div>
+    
+    <!--Les scripts de javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+        <script src="img/joke.js"></script>
+</body>
+</html>
